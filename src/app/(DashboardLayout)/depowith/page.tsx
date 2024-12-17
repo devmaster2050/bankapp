@@ -63,17 +63,17 @@ const depowithpage = () => {
     setOpt({ ...opt, opt: value });
   };
 
-  const handleAmount = (val: string) => {
-    const value = parseFloat(val);
-    const max = opt.opt === 0 ? undefined : opt.total;
-    if (max !== undefined && value > max) {
-      val = max.toString();
-      handleData(max + "", "amount");
-    } else {
-      if (value < 0) handleData("1", "amount");
-      else handleData(value + "", "amount");
-    }
-  };
+  // const handleAmount = (val: string) => {
+  //   const value = parseFloat(val);
+  //   const max = opt.opt === 0 ? undefined : opt.total;
+  //   if (max !== undefined && value > max) {
+  //     val = max.toString();
+  //     handleData(max + "", "amount");
+  //   } else {
+  //     if (value < 0) handleData("1", "amount");
+  //     else handleData(value + "", "amount");
+  //   }
+  // };
 
   return (
     <Form
