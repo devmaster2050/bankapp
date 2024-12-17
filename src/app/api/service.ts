@@ -13,7 +13,7 @@ export const bankSendData = (
 ) => {
   return axios.post(`/api/bank/${id}/${optData[opt.opt].toLowerCase()}`, {
     cardId: data.card,
-    amount: data.amountt,
+    amount: data.amount,
   });
 };
 
